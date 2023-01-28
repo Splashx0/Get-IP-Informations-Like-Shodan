@@ -1,0 +1,23 @@
+<table class="table mt-4">
+  <thead class="bg-dark text-light">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Email</th>
+      <th scope="col">Password</th>
+      <th scope="col">Role</th>
+
+    </tr>
+  </thead>
+  <tbody>
+  <% @users.each do |user| %>
+    <tr>
+      <th scope="row"><%= user.id %> </th>
+      <td><%= user.email %></td>
+      <td><%= user.password_digest %></td>
+      <td><%= user.role %></td>
+
+    </tr>
+ <% end %>
+
+  </tbody>
+</table>
