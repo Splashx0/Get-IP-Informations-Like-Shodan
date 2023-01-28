@@ -31,7 +31,7 @@ class SearchController < ApplicationController
 
    private
    def find_info(ip)
-       response = HTTParty.get("https://api.shodan.io/shodan/host/#{ip}?key=Frcv1pL0wsVdAvostfFCSXFK8IbW0whX")
+       response = HTTParty.get("https://api.shodan.io/shodan/host/#{ip}?key=")
         return json= JSON.parse(response.body)
        
     end
